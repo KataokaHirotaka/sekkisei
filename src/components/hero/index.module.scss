@@ -1,0 +1,25 @@
+.topHero_wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.topHero {
+  width: 100%;
+  height: 100%;
+  background-image: url("./../../../public/assets/img/hero_sp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_title {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    width: 315px;
+    height: 87px;
+  }
+}

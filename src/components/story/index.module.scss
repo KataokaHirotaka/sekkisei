@@ -1,0 +1,19 @@
+.story_section {
+  padding: 0 20px;
+  color: #082e22;
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+  .txt_wrapper {
+    margin-top: 18px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+}
