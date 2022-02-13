@@ -18,7 +18,9 @@ export const Story = (): JSX.Element => {
           translucent skin.
         </p>
       </div>
-      <Image src="/assets/img/story_sp@2x.png" width={335} height={490} />
+      <div className={styles.img_wrapper}>
+        <Image src="/assets/img/story_sp@2x.png" width={335} height={490} />
+      </div>
     </section>
   );
 };

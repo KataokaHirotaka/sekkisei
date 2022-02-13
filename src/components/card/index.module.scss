@@ -74,7 +74,7 @@
       visibility: hidden;
       opacity: 0;
       padding-bottom: 24px;
-      transition: all 0.3s 0.2s ease-out;
+      transition: all 0.2s;
       h3 {
         font-size: 14px;
         font-weight: bold;
@@ -92,6 +92,7 @@
       li {
         visibility: visible;
         opacity: 1;
+        transition: all 0.3s 0.2s ease-out;
       }
     }
   }

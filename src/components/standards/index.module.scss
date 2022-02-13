@@ -1,0 +1,47 @@
+.standards_section {
+  color: #fff;
+  background: #082e22;
+  padding: 58px 20px 0 20px;
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: calc(46 / 36);
+  }
+  .standards_section_txt {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    line-height: calc(27 / 18);
+  }
+  .img_wrapper {
+    text-align: center;
+  }
+  .list_wrapper {
+    font-family: "Opan Sans", sans-serif;
+    margin-top: 30px;
+    padding-bottom: 62px;
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 9px;
+      &:last-child {
+        margin-bottom: 17px;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 13px;
+      text-align: right;
+    }
+  }
+  .supplement {
+    font-family: "Opan Sans", sans-serif;
+    font-size: 11px;
+  }
+}
