@@ -1,6 +1,7 @@
 import styles from "src/components/store/index.module.scss";
 import { storeData } from "src/components/store/data";
 import Image from "next/image";
+import { SnsLink } from "../sns-link";
 
 export const Store = (): JSX.Element => {
   return (
@@ -19,17 +20,9 @@ export const Store = (): JSX.Element => {
           );
         })}
       </ul>
-      <a className={styles.sns_link} href="">
-        Official SNS
-        <div className={styles.link_img_wrapper}>
-          <Image
-            src="/assets/img/instagram.svg"
-            width={34}
-            height={34}
-            alt="instagram"
-          />
-        </div>
-      </a>
+      <div className={styles.sns_link_wrapper}>
+        <SnsLink />
+      </div>
     </section>
   );
 };
