@@ -92,12 +92,11 @@ $main-color: #082e22;
     a {
       color: #fff;
       font-size: 23px;
+      cursor: pointer;
     }
   }
   p {
     font-size: 14px;
-  }
-  div {
   }
   span {
     &:first-child {
