@@ -1,0 +1,15 @@
+.sns_link {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #082e22;
+  cursor: pointer;
+}
+.link_img_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 98px;
+  transform: translate(0%, -50%);
+  width: 35px;
+  height: 35px;
+}
