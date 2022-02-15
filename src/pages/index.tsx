@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { Ingredients } from "src/components/ingredients";
 import { Products } from "src/components/products";
 import { Standards } from "src/components/standards";
 import { Store } from "src/components/store";
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
     <>
       <HomeLayout title="sekkisei" description="sekkiseiのlp">
         <Story />
+        <Ingredients />
         <Products />
         <Standards />
         <Store />
