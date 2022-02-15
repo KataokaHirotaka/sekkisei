@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 import styles from "src/components/nav/index.module.scss";
 import { linkData } from "src/components/nav/data";
+import { Link as Scroll } from "react-scroll";
 
 export const Nav = (): JSX.Element => {
   const [isClick, setIsClick] = useState(false);
@@ -25,8 +26,15 @@ export const Nav = (): JSX.Element => {
         <ul>
           {linkData.map((link) => {
             return (
-              <li key={link.id} onClick={clickHandle}>
-                <a href={link.href}>{link.title}</a>
+              <li key={link.id}>
+                <Scroll
+                  to={link.id}
+                  smooth={true}
+                  duration={600}
+                  onClick={clickHandle}
+                >
+                  {link.title}
+                </Scroll>
               </li>
             );
           })}
