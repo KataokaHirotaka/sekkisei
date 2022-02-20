@@ -5,8 +5,8 @@ import styles from "src/components/ingredients/index.module.scss";
 export const Ingredients = (): JSX.Element => {
   return (
     <section id="ingredients" className={styles.ingredients_section}>
-      <div className={styles.section_container}>
-        <div>
+      <div className={styles.container}>
+        <div className={styles.top_txt_content}>
           <h2>OUR SKINCARE</h2>
           <div className={styles.txt_wrapper}>
             <p>
