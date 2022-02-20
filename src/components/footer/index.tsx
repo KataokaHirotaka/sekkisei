@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
 import styles from "src/components/footer/index.module.scss";
-import { Link as Scroll } from "react-scroll";
+import { ScrollBtn } from "../scrollBtn";
 
 export const Footer = (): JSX.Element => {
   return (
@@ -12,13 +12,12 @@ export const Footer = (): JSX.Element => {
         layout="fill"
         objectFit="cover"
       />
-      <Scroll to="top" smooth={true} duration={600}>
-        <div className={styles.scroll_btn}>
-          <img src="/assets/img/arrow.svg" alt="" />
-        </div>
-      </Scroll>
-
-      <p>Copyright © KOSÉ Corporation. All rights reserved.</p>
+      <div className={styles.scrollBtn_wrapper}>
+        <ScrollBtn />
+      </div>
+      <p className={styles.footer_txt}>
+        Copyright © KOSÉ Corporation. All rights reserved.
+      </p>
     </footer>
   );
 };
