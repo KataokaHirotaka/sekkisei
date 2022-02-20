@@ -1,0 +1,15 @@
+$main-color: #082e22;
+
+$breakpoint: (
+  small: 600px,
+  //タブレット600px~1024px
+  medium: 1024px,
+  large: 1280px,
+  //pc1280px~
+);
+
+$small: 600px;
+$medium: 768px;
+$large: 480px;
+
+$max-width: 1072px;
