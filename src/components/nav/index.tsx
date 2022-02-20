@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import styles from "src/components/nav/index.module.scss";
 import { linkData } from "src/components/nav/data";
 import { Link as Scroll } from "react-scroll";
+import { SnsLink } from "../sns-link";
 
 export const Nav = (): JSX.Element => {
   const [isClick, setIsClick] = useState(false);
@@ -20,8 +21,9 @@ export const Nav = (): JSX.Element => {
           <span></span>
           <span></span>
         </button>
+        <span className={styles.nav_button_txt}>MENU</span>
       </div>
-      <span className={styles.nav_button_txt}>MENU</span>
+
       <nav className={`${styles.nav} ${isClick ? styles.open : null}`}>
         <ul>
           {linkData.map((link) => {
@@ -39,13 +41,14 @@ export const Nav = (): JSX.Element => {
             );
           })}
         </ul>
-        <div>
+        <div className={styles.switch_wrapper}>
           <span>Language</span>
           <span>Es</span>
           <span></span>
           <span>En</span>
         </div>
-        <p>Official SNS</p>
+        <span className={styles.line}></span>
+        <SnsLink type="white" />
       </nav>
     </div>
   );
