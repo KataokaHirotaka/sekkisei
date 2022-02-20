@@ -4,6 +4,7 @@ import { Products } from "src/components/products";
 import { Standards } from "src/components/standards";
 import { Store } from "src/components/store";
 import { Story } from "src/components/story";
+import { Sustinability } from "src/components/sustainability";
 import { HomeLayout } from "src/layouts/home";
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
         <Ingredients />
         <Products />
         <Standards />
+        <Sustinability />
         <Store />
       </HomeLayout>
     </>
