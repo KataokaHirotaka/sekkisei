@@ -6,23 +6,27 @@ import styles from "src/components/products/index.module.scss";
 export const Products = (): JSX.Element => {
   return (
     <section className={styles.products_section} id="products">
-      <div className={styles.products_top}>
+      <div className={`${styles.products_top}`}>
         <h2>PRODUCTS</h2>
-        {/* <Image
-          src="/assets/img/products_top_sp.png"
-          width={400}
-          height={375}
-          alt="products" */}
-        {/* /> */}
       </div>
-      <div className={styles.products_content_wrapper}>
-        {data.map((data) => {
-          return (
-            <div key={data.id}>
-              <Card data={data} />
-            </div>
-          );
-        })}
+      <div className={styles.container}>
+        <div className={styles.top_txt_wrapper}>
+          <h3>ROUTINE</h3>
+          <p>JAPANESE MINIMALIST SKINCARE RITUALS</p>
+          <p>
+            Japanese minimalist skincare rituals include{" "}
+            <br className={styles.br_sp} /> 4 essential steps.
+          </p>
+        </div>
+        <div className={styles.products_content_wrapper}>
+          {data.map((data) => {
+            return (
+              <div key={data.id}>
+                <Card data={data} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
