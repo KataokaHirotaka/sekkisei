@@ -1,0 +1,74 @@
+@import "src/styles/_mixin.scss";
+
+.top_txt_wrapper {
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.txt_wrapper_pc {
+  @include medium {
+    display: block;
+  }
+}
+
+.txt_wrapper_sp {
+  @include medium {
+    display: none;
+  }
+}
+
+.txt_wrapper {
+  font-family: "Open Sans", sans-serif;
+  @include medium {
+    width: calc(50% - 50px);
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-top: 24px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: #505050;
+  }
+}
+
+.txt_wrapper_pc {
+  display: none;
+  @include medium {
+    display: block;
+  }
+}
+
+.txt_section_sp {
+  display: block;
+  @include medium {
+    display: none;
+  }
+}
+
+.txt_section {
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &:last-of-type {
+    @include medium {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.txt_content {
+  @include medium {
+    width: calc(50% - 50px);
+  }
+}
