@@ -1,9 +1,13 @@
+@import "src/styles/_mixin.scss";
 .sns_link {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  color: #082e22;
+  color: $main-color;
   cursor: pointer;
+  &.white {
+    color: #fff;
+  }
 }
 .link_img_wrapper {
   position: absolute;
