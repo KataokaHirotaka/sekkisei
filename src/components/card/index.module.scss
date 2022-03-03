@@ -1,5 +1,26 @@
+@import "src/styles/_mixin.scss";
 .product_card {
   font-family: "Open Sans", sans-serif;
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img_wrapper {
+    position: relative;
+    width: 335px;
+    height: 335px;
+    @include medium {
+      width: 550px;
+      height: 550px;
+    }
+  }
+  .txt_wrapper {
+    @include medium {
+      width: 50%;
+    }
+  }
   .card_title {
     font-family: "Amiri", sans-serif;
     font-size: 48px;
