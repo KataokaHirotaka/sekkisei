@@ -4,27 +4,29 @@ import { linkData } from "src/components/nav/data";
 import { Link as Scroll } from "react-scroll";
 import { SnsLink } from "../sns-link";
 
+// TODOスクロール禁止の記述を書き直す
 export const Nav = (): JSX.Element => {
   const [isClick, setIsClick] = useState(false);
 
   const clickHandle = useCallback(() => {
     setIsClick((prevIsClick) => !prevIsClick);
+    const body = document.querySelector("body");
+    // if (body && !isClick) body.style.overflow = "hidden";
+    // else if (body && isClick) body.style.overflow = "visible";
   }, []);
 
   return (
-    <div className={styles.nav_wrapper}>
+    <div className={`${styles.nav_wrapper} ${isClick ? styles.open : null}`}>
       <div className={styles.nav_button_wrapper} onClick={clickHandle}>
-        <button
-          className={`${styles.nav_button} ${isClick ? styles.open : null}`}
-        >
+        <button className={styles.nav_button}>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <span className={styles.nav_button_txt}>MENU</span>
+        <p className={styles.nav_button_txt}>MENU</p>
       </div>
 
-      <nav className={`${styles.nav} ${isClick ? styles.open : null}`}>
+      <nav className={styles.nav}>
         <ul>
           {linkData.map((link) => {
             return (
@@ -43,9 +45,9 @@ export const Nav = (): JSX.Element => {
         </ul>
         <div className={styles.switch_wrapper}>
           <span>Language</span>
-          <span>Es</span>
+          <span id="spain">Es</span>
           <span></span>
-          <span>En</span>
+          <span id="korea">En</span>
         </div>
         <span className={styles.line}></span>
         <SnsLink type="white" />
