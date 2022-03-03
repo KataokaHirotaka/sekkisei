@@ -1,5 +1,8 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
+import React from "react";
 import styles from "src/components/story/index.module.scss";
+// import { ScrollRevealContainer } from "../scrollRevealContainer";
 
 export const Story = (): JSX.Element => {
   return (
@@ -19,6 +22,7 @@ export const Story = (): JSX.Element => {
             translucent skin.
           </p>
         </div>
+
         <div className={styles.img_wrapper}>
           <Image
             src="/assets/img/story_sp@2x.png"
