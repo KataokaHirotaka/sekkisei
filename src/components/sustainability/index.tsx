@@ -10,10 +10,9 @@ export const Sustinability = (): JSX.Element => {
         <TxtSection type="large" txtData={txtData}>
           <div className={styles.img_wrapper}>
             <Image
-              src="/assets/img/sustinability_01.png"
+              src="/assets/img/sustinability_01@2x.png"
               alt=""
               layout="fill"
-              objectFit="contain"
             />
           </div>
         </TxtSection>
@@ -23,20 +22,18 @@ export const Sustinability = (): JSX.Element => {
         <TxtSection type="small" txtData={txtData}>
           <div className={styles.img_wrapper}>
             <Image
-              src="/assets/img/sustinability_02.png"
+              src="/assets/img/sustinability_02@2x.png"
               alt=""
               layout="fill"
-              objectFit="contain"
             />
           </div>
         </TxtSection>
         <TxtSection type="middle" txtData={txtData}>
           <div className={styles.img_wrapper}>
             <Image
-              src="/assets/img/sustinability_03.png"
+              src="/assets/img/sustinability_03@2x.png"
               alt=""
               layout="fill"
-              objectFit="contain"
             />
           </div>
         </TxtSection>
