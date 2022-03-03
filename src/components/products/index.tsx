@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { data } from "src/components/products/data";
 import { Card } from "../card";
+import { Slider } from "src/components/slider";
 import styles from "src/components/products/index.module.scss";
+import React from "react";
 
 export const Products = (): JSX.Element => {
   return (
@@ -18,6 +20,7 @@ export const Products = (): JSX.Element => {
             <br className={styles.br_sp} /> 4 essential steps.
           </p>
         </div>
+        <Slider />
         <div className={styles.products_content_wrapper}>
           {data.map((data) => {
             return (
