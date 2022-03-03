@@ -13,3 +13,83 @@ $medium: 768px;
 $large: 480px;
 
 $max-width: 1072px;
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes shrinkBackFirst {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5) rotate(32deg);
+  }
+  100% {
+    transform: scale(0.8) rotate(32deg);
+  }
+}
+
+@keyframes shrinkBackLast {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.5) rotate(-32deg);
+  }
+  100% {
+    transform: scale(0.8) rotate(-32deg);
+  }
+}
+
+@keyframes shrinkBack {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes extend {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 100%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
