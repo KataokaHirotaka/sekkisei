@@ -17,3 +17,9 @@
     @content;
   }
 }
+
+@mixin xlarge {
+  @media screen and (min-width: ($xlarge)) {
+    @content;
+  }
+}
