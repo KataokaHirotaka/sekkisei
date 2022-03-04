@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import { useEffect, useRef } from "react";
 import { data } from "src/components/products/data";
 import styles from "src/components/slider/index.module.scss";
 
@@ -19,7 +18,6 @@ export const Slider = (): JSX.Element => {
             <div className={styles.img_wrapper}>
               <Image src={data.img} alt="" layout="fill" objectFit="contain" />
             </div>
-
             <p
               className={`${data.id === "01" ? styles.firstStep : null} ${
                 data.id === "04" ? styles.fourthStep : null

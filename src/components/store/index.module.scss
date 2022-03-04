@@ -1,13 +1,17 @@
 @import "src/styles/_mixin.scss";
 .container {
-  @include medium {
+  @include large {
     max-width: $max-width;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin: 0 auto 0 204px;
   }
 }
 .store_section {
   padding: 66px 20px 0 20px;
   background: #fff;
+  @include large {
+    padding: 66px 0 0 0;
+  }
   .store_section_ttl {
     font-size: 34px;
     margin-bottom: 13px;

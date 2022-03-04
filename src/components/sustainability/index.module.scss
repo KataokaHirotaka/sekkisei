@@ -2,13 +2,17 @@
 .container {
   @include medium {
     max-width: $max-width;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin: 0 auto 0 204px;
   }
 }
 
 .sustinability_section {
   background: #f2f2f2;
   padding: 52px 20px 45px;
+  @include large {
+    padding: 52px 0 45px;
+  }
 
   .top_txt_wrapper {
     h2 {
@@ -43,6 +47,7 @@
 
   .txt_wrapper_pc {
     @include medium {
+      width: 100%;
       display: block;
     }
   }

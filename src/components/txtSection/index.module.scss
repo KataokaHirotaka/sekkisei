@@ -12,6 +12,7 @@
 .txt_wrapper_pc {
   @include medium {
     display: block;
+    width: 100%;
   }
 }
 
@@ -44,6 +45,7 @@
   display: none;
   @include medium {
     display: block;
+    width: 100%;
   }
 }
 

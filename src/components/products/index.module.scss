@@ -8,7 +8,9 @@
   padding: 0 20px;
   @include medium {
     max-width: $max-width;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin: 0 auto 0 204px;
+    padding: 0;
   }
 }
 

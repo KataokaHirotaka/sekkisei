@@ -7,10 +7,14 @@
     padding-top: 90px;
   }
 
+  @include large {
+    padding: 58px 0px 0px 0px;
+  }
   .container {
-    @include medium {
+    @include large {
       max-width: $max-width;
-      margin: 0 auto;
+      // margin: 0 auto;
+      margin: 0 auto 0 204px;
     }
   }
   .ttl_wrapper_pc {

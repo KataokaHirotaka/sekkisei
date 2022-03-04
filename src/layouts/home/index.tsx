@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo";
 import styles from "src/layouts/home/index.module.scss";
 import { Footer } from "src/components/footer";
 import { Hero } from "src/components/hero";
+import Head from "next/head";
 
 export const HomeLayout = (props: LayoutProps): JSX.Element => {
   return (

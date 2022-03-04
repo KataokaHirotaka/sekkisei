@@ -2,12 +2,18 @@
 .content_wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-bottom: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #dedede;
   @include medium {
+    justify-content: center;
     padding-bottom: 90px;
   }
-  border-bottom: 1px solid #dedede;
+  @include large {
+    overflow-x: hidden;
+  }
 }
 
 .img_wrapper {
