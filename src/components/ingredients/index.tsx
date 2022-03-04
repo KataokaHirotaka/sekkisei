@@ -23,16 +23,21 @@ export const Ingredients = (): JSX.Element => {
             </p>
           </div>
         </div>
-        <div className={styles.txt_wrapper}>
-          <p>INGREDIENTS</p>
-          <h3>ITOWA</h3>
-          <p>sourced from Japan</p>
-          <p>
-            Our proprietary ITOWA™ ingredient features a unique blend of three
-            herbs carefully sourced from Japan to firm, smooth, and boost
-            ceramides in your skin.
-          </p>
+        <div className={styles.second_txt_content}>
+          <div className={styles.txt_wrapper}>
+            <p>INGREDIENTS</p>
+            <h3>
+              ITOWA<small>TM</small>
+            </h3>
+            <p>sourced from Japan</p>
+            <p>
+              Our proprietary ITOWA™ ingredient features a unique blend of three
+              herbs carefully sourced from Japan to firm, smooth, and boost
+              ceramides in your skin.
+            </p>
+          </div>
         </div>
+
         <ul className={styles.ingredients_list}>
           {data.map((data) => {
             return (
