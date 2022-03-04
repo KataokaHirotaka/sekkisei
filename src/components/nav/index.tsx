@@ -4,15 +4,12 @@ import { linkData } from "src/components/nav/data";
 import { Link as Scroll } from "react-scroll";
 import { SnsLink } from "../sns-link";
 
-// TODOスクロール禁止の記述を書き直す
 export const Nav = (): JSX.Element => {
   const [isClick, setIsClick] = useState(false);
 
   const clickHandle = useCallback(() => {
     setIsClick((prevIsClick) => !prevIsClick);
     const body = document.querySelector("body");
-    // if (body && !isClick) body.style.overflow = "hidden";
-    // else if (body && isClick) body.style.overflow = "visible";
   }, []);
 
   return (
