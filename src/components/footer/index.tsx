@@ -16,7 +16,7 @@ export const Footer = (): JSX.Element => {
       </div>
       <div className={styles.img_pc_wrapper}>
         <Image
-          src="/assets/img/footer_main_sp@2x.png"
+          src="/assets/img/footer_main@2x.png"
           layout="fill"
           objectFit="cover"
         />

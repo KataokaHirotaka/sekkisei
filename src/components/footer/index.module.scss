@@ -5,6 +5,25 @@
   height: 547px;
   text-align: center;
 
+  .img_sp_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include medium {
+      display: none;
+    }
+  }
+
+  .img_pc_wrapper {
+    display: none;
+    @include medium {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .footer_txt {
     position: absolute;
     bottom: 20px;
