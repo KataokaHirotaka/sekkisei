@@ -5,8 +5,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 90px;
   }
 
+  p {
+    color: #505050;
+    margin-top: 4px;
+    @include medium {
+      margin-top: 8px;
+    }
+  }
   .img_wrapper {
     position: relative;
     width: 335px;
@@ -24,6 +32,9 @@
   .card_title {
     font-family: "Amiri", sans-serif;
     font-size: 48px;
+    @include medium {
+      // white-space: nowrap;
+    }
   }
   .card_supplement {
     font-size: 16px;
@@ -109,7 +120,7 @@
   }
   .open {
     .card_section_list {
-      height: 420px;
+      height: 100%;
       li {
         visibility: visible;
         opacity: 1;
